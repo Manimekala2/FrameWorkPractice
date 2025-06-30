@@ -20,9 +20,10 @@ public class HRM_AdminPage extends Generic {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void adminPage(String page,String myMenu) throws InterruptedException {
+	public void adminPage(String page,String myMenu,String name) throws InterruptedException {
 		openGivenMenuFromMainMenu(page);
 		clickOnUserManagementMenufromTopMenuBar(myMenu);
+		searchByUserName(name);
 	}
 	
 	public  void openGivenMenuFromMainMenu(String myPage) {
@@ -44,22 +45,19 @@ public class HRM_AdminPage extends Generic {
 		Thread.sleep(2000);
 		mySubElement.click();
 	}
+	
 
 	
 	
-	@FindBy(xpath = "")
-	WebElement a;
+	@FindBy(xpath = "//div[@class='oxd-input-group__label-wrapper']//following-sibling::div/input")
+	WebElement userName;
+	@FindBy(xpath = " //button[text()=' Search ']")
+	WebElement button_search;
 	
-//	@FindBy(xpath = "")
-//	WebElement a;
-//	
-//	@FindBy(xpath = "")
-//	WebElement a;
-//	
-//	@FindBy(xpath = "")
-//	WebElement a;
-//	
-//	@FindBy(xpath = "")
-//	WebElement a;
+
+	public  void searchByUserName(String name) {
+		generic.sendTextToAnElement(userName, name);
+		generic.clickAnElement(button_search);
+	}
 
 }

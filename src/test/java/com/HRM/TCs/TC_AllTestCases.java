@@ -19,7 +19,7 @@ public class TC_AllTestCases extends Generic {
 //		HRM_LoginPage loginPage = new HRM_LoginPage(getDriver());
 		loginPage.loginOrangeHRMPage("Admin", "admin123");
 		HRM_AdminPage adminPage=new HRM_AdminPage(driver);
-		adminPage.adminPage("Admin","User Management");
+		adminPage.adminPage("Admin","User Management","Admin");
 //		HRM_CommonPage commonPage = new HRM_CommonPage(driver);
 //		commonPage.getUserName();
 //		commonPage.validateClientImage1();
