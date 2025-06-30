@@ -2,6 +2,7 @@ package com.HRM.TCs;
 
 import org.testng.annotations.Test;
 
+import com.Orange.pages.HRM_AdminPage;
 import com.Orange.pages.HRM_CommonPage;
 import com.Orange.pages.HRM_LoginPage;
 
@@ -17,12 +18,14 @@ public class TC_AllTestCases extends Generic {
 		HRM_LoginPage loginPage = new HRM_LoginPage(driver);
 //		HRM_LoginPage loginPage = new HRM_LoginPage(getDriver());
 		loginPage.loginOrangeHRMPage("Admin", "admin123");
-		HRM_CommonPage commonPage = new HRM_CommonPage(driver);
-		commonPage.getUserName();
-		commonPage.validateClientImage1();
-		commonPage.minimizeTheMenuSection();
-		commonPage.searchAPage("Time");
-		commonPage.goToTheGivenPage("Time");
+		HRM_AdminPage adminPage=new HRM_AdminPage(driver);
+		adminPage.adminPage("Admin","User Management");
+//		HRM_CommonPage commonPage = new HRM_CommonPage(driver);
+//		commonPage.getUserName();
+//		commonPage.validateClientImage1();
+//		commonPage.minimizeTheMenuSection();
+//		commonPage.searchAPage("Time");
+//		commonPage.goToTheGivenPage("Time");
 	}
 
 }

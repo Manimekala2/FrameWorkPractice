@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -127,7 +128,14 @@ public class Generic {
 	public void clickAnElement(WebElement ele) {
 		ele.click();
 	}
-
+public void clickAnElementFromListOfElement(List<WebElement>  allElement,String myElement) {
+	for (WebElement eachElement : allElement) {
+		if (eachElement.getText().equalsIgnoreCase(myElement)) {
+			eachElement.click();
+			break;
+		}
+	}
+}
 //	Frame Related methods
 
 	public int noOfiFramesInWebPage() {

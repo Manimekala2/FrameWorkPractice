@@ -28,7 +28,7 @@ public class HRM_LoginPage {
 	@FindBy(name = "password")
 	WebElement textBox_Password;
 
-	@FindBy(xpath = "//button[text() = ' Login ']122132")
+	@FindBy(xpath = "//button[text() = ' Login ']")
 	WebElement button_Login;
 	
 //	@FindBy(xpath = "")
