@@ -102,7 +102,7 @@ public class HRM_CommonPage {
 			if (eachPage.getText().equalsIgnoreCase(pageName)) {
 				eachPage.click();
 				Thread.sleep(2000);
-				Generic.extentLogger= Generic.extentReport.createTest(pageName);
+//				Generic.extentLogger= Generic.extentReport.createTest(pageName);
 				Generic.extentLogger.pass(pageName+"Page Loaded Sucessfully",
 						MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
 				break;
@@ -114,10 +114,18 @@ public class HRM_CommonPage {
 	}
 	
 	public String getUserName() {
-		Generic.extentLogger= Generic.extentReport.createTest("Home Page");
-		String UserName=text_UserName.getText();
+		String UserName = null;
+		try {
+//		Generic.extentLogger= Generic.extentReport.createTest("Home Page");
+		UserName=text_UserName.getText();
 		Generic.extentLogger.pass("User Name Fetched from Website= "+UserName);
-		return text_UserName.getText();
+		}
+		catch(Exception e) {
+			UserName = "NOT AVAILABLE";
+			Generic.extentLogger.fail("User Name Fetched from Website= "+UserName);
+			Assert.fail("User Name Fetched from Website= "+UserName);
+		}
+		return UserName;
 	}
 	
 //	public void goToUserMenuOption(String menuName) {

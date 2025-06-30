@@ -19,8 +19,6 @@ public class HRM_LoginPage {
 	public HRM_LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		
-		
 	}
 	
 
@@ -30,7 +28,7 @@ public class HRM_LoginPage {
 	@FindBy(name = "password")
 	WebElement textBox_Password;
 
-	@FindBy(xpath = "//button[text() = ' Login ']")
+	@FindBy(xpath = "//button[text() = ' Login ']122132")
 	WebElement button_Login;
 	
 //	@FindBy(xpath = "")
@@ -54,11 +52,13 @@ public class HRM_LoginPage {
 	public void loginOrangeHRMPage(String userName, String password) throws Exception {
 		try {
 //		textBox_UserName.sendKeys(userName);
-			Generic.extentLogger= Generic.extentReport.createTest("loginPage");
+//			Generic.extentLogger= Generic.extentReport.createTest("loginPage");
+			Generic.extentLogger.pass("Website or application is launched",
+					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
 			generic.sendTextToAnElement(textBox_UserName, userName);
 			generic.sendTextToAnElement(textBox_Password, password);
 			Thread.sleep(1000);
-			Generic.extentLogger.pass("Website Lauched with Login Credentials",
+			Generic.extentLogger.pass("Login Credentials entered in the application",
 					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
 			generic.clickAnElement(button_Login);
 			Thread.sleep(5000);
@@ -66,8 +66,13 @@ public class HRM_LoginPage {
 					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
 	
 		} catch (Exception e) {
-			Generic.extentLogger.pass("Failed to login Orange HRM application." + e.getMessage(),
+			Generic.extentLogger.fail("Failed to login Orange HRM application." + e.getMessage(),
 					MediaEntityBuilder.createScreenCaptureFromPath(Generic.captureScreenshot()).build());
+//			System.err.println(e.getMessage());
+//			System.out.println("*********************************");
+//			System.err.println(e.getLocalizedMessage()+"+++++++++++++++++++");
+//			System.out.println("#################################");
+			System.err.println(e.fillInStackTrace()+"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
 			Assert.fail("Failed to login Orange HRM application.");
 		}
 
