@@ -6,7 +6,7 @@ I’ve built robust test automation frameworks using Selenium WebDriver, TestNG,
 I have strong command over tools like Jira, HP ALM, and version control with Git, and I’m experienced with Agile methodology.
 I’ve also worked on SQL databases, performed various testing types—like functional, regression, UAT—and trained new QA team members to maintain consistency and quality. 
 My work has been recognized with several On Spot ,Technical Key Excellence award. I’ve also taken the initiative to upskill myself by completing the AZ-900 Microsoft Azure Fundamentals certification,
-expanding my understanding of cloud technologie
+expanding my understanding of cloud technologies
 
 STLC:
 TLC (Software Testing Life Cycle) is a sequence of specific activities conducted during the testing process to ensure software quality goals are met. 
