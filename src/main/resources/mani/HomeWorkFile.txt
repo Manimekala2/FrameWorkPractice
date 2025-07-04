@@ -167,6 +167,8 @@ During Regression or Sprint End
 Automated scripts are added to the regression suite.
 These are integrated into CI pipelines for future builds.
 
+
+
 Short Version (for Interviews):
 I start automation after the feature is manually tested and stable in the sprint. While the dev team works, I prepare reusable methods, locators, and test design. Once the functionality is ready, I automate it within the same sprint or early in the next, depending on stability and time.
 	
