@@ -1,0 +1,173 @@
+Self Intro:
+Hello! I’m Manimekala Rajangam, a Quality Analyst with over 4 years of experience in software testing—both manual and automation.
+Currently, I’m working as an IT Analyst at Tata Consultancy Services, where I’ve been a part of projects in the retail domain, specifically for Hennes and Mauritz AB, handling Identity and Access Management systems.
+My day-to-day involves test planning, automation scripting, and collaborating closely with developers and product teams to improve test efficiency and coverage.
+I’ve built robust test automation frameworks using Selenium WebDriver, TestNG, Maven, applying design patterns like Page Object Model.
+I have strong command over tools like Jira, HP ALM, and version control with Git, and I’m experienced with Agile methodology.
+I’ve also worked on SQL databases, performed various testing types—like functional, regression, UAT—and trained new QA team members to maintain consistency and quality. 
+My work has been recognized with several On Spot ,Technical Key Excellence award. I’ve also taken the initiative to upskill myself by completing the AZ-900 Microsoft Azure Fundamentals certification,
+expanding my understanding of cloud technologie
+
+STLC:
+TLC (Software Testing Life Cycle) is a sequence of specific activities conducted during the testing process to ensure software quality goals are met. 
+It defines a series of phases followed by the QA team to test software systematically.
+
+ STLC Phases Explained
+Phase	Description
+1. Requirement Analysis:
+	Understand and analyze testing requirements. 
+	QA team interacts with stakeholders to identify what to test.
+2. Test Planning	
+	Determine test strategy, effort estimation, resources, tools, and timelines.
+3. Test Case Design:
+	Write test cases and scripts based on requirements.
+4. Test Environment Setup:
+	Prepare hardware, software, network, and tools required for execution. Often involves DevOps or system team support.
+5. Test Execution:
+	Run the test cases and log results. Failures are logged as defects.
+6. Defect Reporting & Retesting:
+	Log defects in tools like JIRA, retest after fix, and track closure.
+7. Test Cycle Closure:
+	Final report of test results, defect summary, and learnings.
+	
+	SDLC – Software Development Life Cycle
+SDLC (Software Development Life Cycle) is the process used by the software industry to design, develop, test, and deploy high-quality software systematically and efficiently.
+
+SDLC Phases:
+Phase	Description
+
+1. Requirement Gathering & Analysis	Stakeholders, BAs, and product owners gather business needs. QA may be involved to understand testability.
+2. System Design	Architects and developers create system & technical design docs (HLD/LLD). Technologies, tools, and data flow are finalized.
+3. Implementation / Coding	Developers write actual code as per the design, following coding standards and version control.
+4. Testing (STLC begins here)	QA team tests functionality, usability, security, etc., based on written test cases.
+5. Deployment	Code is moved to production environment (may go through staging/QA). Tools like Jenkins or manual release.
+6. Maintenance	Post-deployment support and bug fixing. Minor enhancements may be added based on feedback.
+
+
+Defect/Bug Life Cycle (Bug Workflow)
+The Defect Life Cycle (also called Bug Life Cycle) defines the states a defect goes through from when it is discovered to when it is closed. 
+It ensures proper tracking, accountability, and quality control in software testing.
+
+1.New	
+	Tester finds a bug and logs it. Status = New.
+2. Assigned	
+	Bug is assigned to a developer by the lead/test manager.
+3. Open
+	Developer reviews and begins working on the fix.
+4. In Progress / Fixed
+	Developer fixes the defect. Status = Fixed.
+5. Retest
+	QA retests the defect to verify the fix.
+6. Reopen
+	If the fix fails, bug is reopened and returned to the developer.
+7. Verified	
+If the fix passes testing, bug is marked Verified.
+8. Closed
+	QA/Lead closes the defect as it’s resolved successfully.
+9. Deferred
+	If the bug is low priority or out of current scope, it's deferred for future.
+10. Rejected / Not a Bug
+	Bug is invalid or works as intended. It’s rejected by the developer.
+	
+	
+How regression team works :
+The Regression Testing Team plays a crucial role in ensuring that new code changes do not break existing functionality
+	
+ 1. Understanding the Scope
+The team identifies which areas or features of the application need to be re-tested.
+
+They analyze:
+What new code has been deployed
+What existing modules may be impacted (via dependencies)
+
+ 2. Selecting Test Cases
+The team selects test cases from:
+Regression suite (predefined test cases that cover core functionalities)
+Smoke tests for quick health check
+Additional tests based on change impact analysi
+Tools may be used for Test Impact Analysis (like Azure DevOps, TestNG groups, etc.)
+
+ 3. Test Environment Setup
+Ensure the environment (QA, Staging, etc.) is stable and reflects the latest build.
+Database and config files must match production-like settings.
+
+ 4. Test Execution
+Tests are run manually or using automation scripts.
+Automation tools used: Selenium, Cypress, Playwright, etc.
+Results are logged using tools like:
+Jenkins
+Allure Report
+Extent Reports
+
+5. Bug Reporting
+Any defects found are logged in defect tracking tools (e.g., JIRA, Bugzilla).
+
+Bugs are tagged with:
+Severity
+Priority
+Impact area
+
+🔁 6. Re-Testing and Closure
+Once defects are fixed, the team re-tests the failed scenarios.
+If the system is stable, the regression cycle is marked as passed.
+Results are shared with stakeholders or developers.
+
+ 7. Regression Testing Frequency
+Sprint-based projects: Regression is done at the end of every sprint.
+Release-based: Full regression is done before every release.
+In Agile, teams often use daily or weekly automation runs to catch issues early.
+
+How do you support regression:
+
+Identifying Impacted Areas
+I analyze the user stories, bug fixes, or enhancements delivered in the sprint and identify what existing modules could be affected.
+
+ Maintaining Regression Suite
+I help maintain an up-to-date regression test suite by reviewing existing cases, removing outdated ones, and adding new tests as features evolve.
+
+ Executing Tests
+
+For manual regression, I prioritize test cases that cover high-risk, frequently used, or critical business scenarios.
+
+For automation, I ensure regression scripts are maintained, updated, and executed regularly via Jenkins or other CI tools.
+
+ Bug Verification and Logging
+I log any regression defects found during execution and work closely with the dev team for quick resolution and retesting.
+
+ Test Reporting
+I provide clear test result reports using tools like Extent Reports, Allure, or manual Excel reports for stakeholders, mentioning pass/fail stats and defect details.
+
+ Continuous Integration Support
+I integrate automated regression suites with CI/CD pipelines (e.g., Jenkins/GitLab CI) so they run on every build or before a release.
+
+ Optimizing Test Execution
+I support parallel test execution and tagging tests (e.g., smoke, sanity, critical) to reduce regression time while ensuring coverage.
+
+I plan automation tasks parallel to development, but actual scripting is typically done after the functionality is stable and testable in the QA environment. Here's how I handle it within a sprint:
+
+When will you do the automation in a sprint:
+
+During Sprint Planning
+I analyze user stories and identify which ones are automation candidates based on:
+Stability of the feature
+Reusability
+Business priority
+Manual execution frequency
+
+While Development is in Progress
+Prepare test data, locators, and reusable functions
+Create or update page objects and framework utilities
+Coordinate with developers for early builds or API contracts
+
+After Feature Is Deployed to QA
+Once the feature is ready for testing and passes manual validation, I start automating it.
+This ensures automation is based on a stable UI/API, reducing maintenance.
+
+During Regression or Sprint End
+Automated scripts are added to the regression suite.
+These are integrated into CI pipelines for future builds.
+
+Short Version (for Interviews):
+I start automation after the feature is manually tested and stable in the sprint. While the dev team works, I prepare reusable methods, locators, and test design. Once the functionality is ready, I automate it within the same sprint or early in the next, depending on stability and time.
+	
+
