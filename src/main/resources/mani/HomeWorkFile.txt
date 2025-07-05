@@ -2,9 +2,9 @@ Self Intro:
 Hello! I’m Manimekala Rajangam, a Quality Analyst with over 4 years of experience in software testing—both manual and automation.
 Currently, I’m working as an IT Analyst at Tata Consultancy Services, where I’ve been a part of projects in the retail domain, specifically for Hennes and Mauritz AB, handling Identity and Access Management systems.
 My day-to-day involves test planning, automation scripting, and collaborating closely with developers and product teams to improve test efficiency and coverage.
-I’ve built robust test automation frameworks using Selenium WebDriver, TestNG, Maven, applying design patterns like Page Object Model.
-I have strong command over tools like Jira, HP ALM, and version control with Git, and I’m experienced with Agile methodology.
-I’ve also worked on SQL databases, performed various testing types—like functional, regression, UAT—and trained new QA team members to maintain consistency and quality. 
+I’ve done test automation frameworks using Selenium WebDriver, TestNG, Maven, applying design patterns like Page Object Model.
+I have strong command over tools like Jira,and version control with Git, and I’m experienced with Agile methodology.
+I’ve also worked on SQL databases, performed various testing types—like functional, regression, UAT. 
 My work has been recognized with several On Spot ,Technical Key Excellence award. I’ve also taken the initiative to upskill myself by completing the AZ-900 Microsoft Azure Fundamentals certification,
 expanding my understanding of cloud technologies
 
@@ -36,12 +36,18 @@ SDLC (Software Development Life Cycle) is the process used by the software indus
 SDLC Phases:
 Phase	Description
 
-1. Requirement Gathering & Analysis	Stakeholders, BAs, and product owners gather business needs. QA may be involved to understand testability.
-2. System Design	Architects and developers create system & technical design docs (HLD/LLD). Technologies, tools, and data flow are finalized.
-3. Implementation / Coding	Developers write actual code as per the design, following coding standards and version control.
-4. Testing (STLC begins here)	QA team tests functionality, usability, security, etc., based on written test cases.
-5. Deployment	Code is moved to production environment (may go through staging/QA). Tools like Jenkins or manual release.
-6. Maintenance	Post-deployment support and bug fixing. Minor enhancements may be added based on feedback.
+1. Requirement Gathering & Analysis:
+	Stakeholders, BAs, and product owners gather business needs. QA may be involved to understand testability.
+2. System Design:
+	Architects and developers create system & technical design docs (HLD/LLD). Technologies, tools, and data flow are finalized.
+3. Implementation / Coding:
+	Developers write actual code as per the design, following coding standards and version control.
+4. Testing (STLC will be continued ):
+	QA team tests functionality, usability, security, etc., based on written test cases.
+5. Deployment	:
+Code is moved to production environment (may go through staging/QA). Tools like Jenkins or manual release.
+6. Maintenance:
+	Post-deployment support and bug fixing. Minor enhancements may be added based on feedback.
 
 
 Defect/Bug Life Cycle (Bug Workflow)
